@@ -13,12 +13,39 @@
     </header>
     <main id="container">
         <h2>Daily Journal</h2>
+        
         <form class="entryForm">
             <fieldset>
                 <label for="entryDate">Date</label>
                 <input type="date" name="entryDate" class="entryForm__date">
             </fieldset>
+
+            <fieldset>
+                <label for="entryConcepts">Concepts covered</label>
+                <input type="text" name="entryConcepts" class="entryForm__concepts">
+            </fieldset>
+            
+            <fieldset>
+                <label for="entryJournalEntry">Journal Entry</label>
+                <textarea id="entryJournalEntry" name="entryJournalEntry" class="entryForm_entry">Write your journal entry here</textarea>
+            </fieldset>
+
+            <fieldset>
+                <label for="entryMood">Mood for the day</label>
+                <select>
+                    <option>Happy</option>
+                    <option>Sad</option>
+                    <option>In pain</option>
+                    <option>Excited</option>
+                    <option>Tired</option>
+                </select>
+            </fieldset>
+
+            <button type="button">Record Journal Entry</button>
         </form>
+
+        <article id="entries">List of entries</article>
+
         <section>
             <h3>Journal Entries</h3>
                 <article>
@@ -28,7 +55,7 @@
                     <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ab numquam beatae, a mollitia hic qui suscipit, nemo facilis ducimus saepe minima odit libero. Facilis totam quidem at pariatur quod in.</p>
                 </article>
         </section>
-        <article>List of entries</article>
+        
     </main>
     <footer></footer>
 </body>
