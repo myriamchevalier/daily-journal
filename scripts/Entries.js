@@ -12,19 +12,19 @@ export const Entries = () => {
 
     for (const entry of entries) {
         allEntriesAsHTML += `
+        <section class="entry">
+            <h4>Date</h4>
+            ${entry.date}
         
-        <h3>Date</h3>
-        ${entry.date}
-        
-        <h3>Concept</h3>
-        ${entry.concept}
+            <h4>Concept</h4>
+            ${entry.concept}
 
-        <h3>Journal Entry</h3>
-        ${entry.entry}
+            <h4>Journal Entry</h4>
+            ${entry.entry}
 
-        <h3>Mood</h3>
-        ${entry.mood}
-
+            <h4>Mood</h4>
+            ${entry.mood}
+        </section>
         `
     }
     
