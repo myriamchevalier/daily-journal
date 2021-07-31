@@ -1,6 +1,5 @@
 import { Entries } from "./Entries.js"
-
-const entries = Entries()
+import { journalForm } from "./JournalForm.js"
 
 export const DailyJournal = () => {
     return `
@@ -9,5 +8,9 @@ export const DailyJournal = () => {
         <div class="entryList">
             ${ Entries() }
         </div>
+
+        <article class="entryForm'>
+            ${ journalForm() }
+        </article>
     `
 }
